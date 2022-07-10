@@ -126,9 +126,19 @@ def read():
     if(name==3):
         Divya(2)
     
-log_or_read = input("What do you want to do Log(1) or Read(2): ")
-log_or_read=int(log_or_read)
-if(log_or_read==1):
-    log()
-if(log_or_read==2):
-    read()
+x=1
+x=int(x)
+while(x!=10):
+    log_or_read = input("What do you want to do Log(1) or Read(2): ")
+    log_or_read=int(log_or_read)
+    if(log_or_read==1):
+     log()
+    elif(log_or_read==2):
+     read()
+    
+    need = input("Do you want to perform another operation(1) or exit(2): ")
+    need=int(need)
+    if(need==1):
+        x=1
+    elif(need==2):
+        x=10
